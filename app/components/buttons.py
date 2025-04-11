@@ -120,6 +120,32 @@ def pol_buttons(ident):
             )
     return pols
 
+#added by SYK, for version two tap in the home page
+def pol_buttons_v2(page):
+    """Creates version 2 buttons for NO2, O3, and PM2.5"""
+    id_suffix = page
+    
+    return html.Div(
+        [
+            dbc.RadioItems(
+                id=f"crossfilter-yaxis-column{id_suffix}",
+                className="btn-group",
+                inputClassName="btn-check",
+                labelClassName="btn btn-outline-primary",
+                labelCheckedClassName="active",
+                options=[
+                    {"label": "CO₂", "value": "CO2"},
+                    {"label": "NO₂", "value": "NO2"},
+                    {"label": "O₃", "value": "O3"},
+                    {"label": "PM₂.₅", "value": "PM"}
+                ],
+                value="NO2",
+            ),
+        ],
+        className="radio-group",
+    )
+
+
 def pop_weighted(ident):
     wgt = dbc.RadioItems(
                     id='crossfilter-data-type'+ident,
