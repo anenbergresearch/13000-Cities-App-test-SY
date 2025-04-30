@@ -1,20 +1,19 @@
 /* restyle radio items */
 .radio-group .form-check {
-  padding-left: 0;
+    padding-left: 0;
 }
-
+  
 .radio-group .btn-group > .form-check:not(:last-child) > .btn {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
-
+  
 .radio-group .btn-group > .form-check:not(:first-child) > .btn {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: -1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
 }
-
-
+  
 .btn-secondary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #123C69;
@@ -31,8 +30,8 @@
     --bs-btn-disabled-bg: #123C69;
     --bs-btn-disabled-border-color: #123C69;
 }
-
-
+  
+/* Ensure consistent styling for radio buttons */
 .radio-group .btn-group > .form-check:not(:first-child) > .btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -42,66 +41,12 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-.radio-group .btn-group > .form-check:not(:first-child) > .btn {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    margin-left: -1px;
-}
-.radio-group .btn-group > .form-check:not(:last-child) > .btn {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-.btn-outline-secondary {
-    --bs-btn-color: #123C69;
-    --bs-btn-border-color: #123C69;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #6c757d;
-    --bs-btn-hover-border-color: #6c757d;
-    --bs-btn-focus-shadow-rgb: 108,117,125;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #123C69;
-    --bs-btn-active-border-color: #123C69;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #6c757d;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #6c757d;
-    --bs-gradient: none;
-}
-.btn-outline-secondary {
-    --bs-btn-color: #123C69;
-    --bs-btn-border-color: #123C69;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #6c757d;
-    --bs-btn-hover-border-color: #6c757d;
-    --bs-btn-focus-shadow-rgb: 108,117,125;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #123C69;
-    --bs-btn-active-border-color: #123C69;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #6c757d;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #6c757d;
-    --bs-gradient: none;
-}
-.btn-outline-secondary {
-    --bs-btn-color: #6c757d;
-    --bs-btn-border-color: #6c757d;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #6c757d;
-    --bs-btn-hover-border-color: #6c757d;
-    --bs-btn-focus-shadow-rgb: 108,117,125;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #6c757d;
-    --bs-btn-active-border-color: #6c757d;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #6c757d;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #6c757d;
-    --bs-gradient: none;
-}
+
 .btn {
     --bs-btn-font-size: 19px;
-    font-family: lato, sans-serif;}
+    font-family: lato, sans-serif;
+} 
+  
 .btn-outline-secondary {
     --bs-btn-color: #033c5a;
     --bs-btn-border-color: #033c5a;
@@ -118,105 +63,112 @@
     --bs-btn-disabled-border-color: #6c757d;
     --bs-gradient: none;
 }
-*{
-  font-size: 21px;
-  font-family: Lato;
-}
 
+*{
+    font-size: 21px;
+    font-family: Lato;
+}
+  
 .rc-slider-mark {
     font-size: 15px;
 }
 .h1 {
-    margin-top:10px}
-
+    margin-top:10px
+}
+  
 body {
-background-color: white;
-padding-top: 0px;
+    background-color: white;
+    padding-top: 0px;
 }
-
+  
 .rc-slider-track {
-  background-color: #123C69;
+    background-color: #123C69;
 }
-
+  
 hr {
     padding-top: 15px;
     padding-bottom: 5px;
     margin-bottom:5px;
     margin-top:15px;
-    color: #033c5a}
-
+    color: #033c5a
+}
+  
 .rc-slider-dot {
     border-color: #6A8099;
-    background-color: #6A8099;}
-
+    background-color: #6A8099;
+}
+  
 .rc-slider-dot-active {  
-  border-color: #ffd400;
-  border: solid 2px #123C69;
+    border-color: #ffd400;
+    border: solid 2px #123C69;
 }
 .p {
     font-size:20px;
 }
 .h5 {
     font-family: Lato, sans-serif;
-    font-weight: bold}
-
+    font-weight: bold
+}
+  
 .rc-slider-handle {
-  background-color: #ffd400;
-  border-color: #ffd400;;
-  border: solid 2px #123C69;
+    background-color: #ffd400;
+    border-color: #ffd400;;
+    border: solid 2px #123C69;
 }
-
+  
 .rc-slider-handle-click-focused:focus {
-  border-color: #ffd400;}
-
+    border-color: #ffd400;
+}
+  
 .rc-slider-handle:hover {
-  border-color: #ffd400;
+    border-color: #ffd400;
 }
-
+  
 .rc-slider-handle-active:active {
-  border-color: #ffd400;
+    border-color: #ffd400;
 }
-
+  
 .rc-slider-mark-text {
     font-family: Lato, sans-serif;
     transform: rotate(-45deg) translateX(-50%);
-    color: #6A8099}
-
+    color: #6A8099
+}
+  
 .rc-slider-mark-text-active {
     color: #123C69;
-    font-weight: bold}
-
+    font-weight: bold
+}
+  
 .accordion-button {
     font-size: 21px;
 }
-
+  
 .accordion-button:not(.collapsed) {
     background-color: #6A8099;
     color: white;
     font-size: 21px;
 }
-
+  
 .rc-slider-step {
-    background: #6A8099;}
-
-\
-
+    background: #6A8099;
+}
+  
 .is-focused:not(.is-open) > .Select-control {
-  border-color: #123C69;
-  box-shadow: 0 0 0 3px #6A809966;
+    border-color: #123C69;
+    box-shadow: 0 0 0 3px #6A809966;
 }
-
+  
 .custom-dropdown .Select--multi .Select-value {
-  background-color: #fff;
-  border-color: #123C69;
-  color: #123C69;
-  font-size: 18px;
+    background-color: #fff;
+    border-color: #123C69;
+    color: #123C69;
+    font-size: 18px;
 }
-
+  
 .custom-dropdown {
     font-size: small;
 }
-
+  
 .Select--multi .Select-value-icon {
     cursor: pointer;
     border-bottom-left-radius: 2px;
@@ -225,7 +177,7 @@ hr {
     border-right: 1px solid rgba(0,126,255,.24);
     padding: 1px 1px 1px;
 }
-
+  
 .Select--multi .Select-value-label {
     border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
@@ -236,31 +188,31 @@ hr {
 .custom-dropdown .Select--multi>.Select-control .Select-value, .Select-placeholder{
     font-size:small;
 }
-
+  
 .Select.has-value.Select--single > .Select-control .Select-value .Select-value-label, .Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
     color: #123C69;
 }
-
+  
 .has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
     color: #123C69;
 }
 .single-dropd .Select-value-label{
-  background-color: #fff;
-  border-color: #123C69;
-  font-size: 18px;
+    background-color: #fff;
+    border-color: #123C69;
+    font-size: 18px;
 }
-
-
+  
+  
 .Select-menu-outer {
     font-size: 10px;
 }
-
-
+  
+  
 .single-dropd .Select--single>.Select-control .Select-value, .Select-placeholder{
-  font-size: 18px;
-  color: #123C69;
+    font-size: 18px;
+    color: #123C69;
 }
-
+  
 .single-dropd .Select-input {
     height: 34px;
     padding-left: 10px;
@@ -269,47 +221,49 @@ hr {
     font-size: 12px;
     color: #123C69;
 }
-
+  
 .navbar {
     --bs-navbar-brand-font-size: 32px;
     --bs-navbar-brand-color: rgba(255, 255, 255, 1);
     --bs-navbar-brand-hover-color: #ffc451;
-
 }
 .navbar-brand {
     font-weight: bold;
     font-family: lato, sans-serif;
 }
-
+  
 .nav-link {
     display: block;
     font-size: 28px;
     color: rgba(255, 255, 255, 0.9); 
     font-family: lato, sans-serif;
-    text-decoration: none;}
-
+    text-decoration: none;
+}
+  
 .navbar-nav {
     --bs-nav-link-padding-x: 0;
     --bs-nav-link-padding-y: 0.5rem;
     --bs-nav-link-font-weight: ;
     --bs-nav-link-color: #d9d0bb;
-    --bs-nav-link-hover-color: #ffd400;}
-
+    --bs-nav-link-hover-color: #ffd400;
+}
+  
 .card {
     --bs-card-color: #033c5a;
 }
-
+  
 .nav-tabs .nav-link {
     background-color: rgba(3, 60, 90,0.9);
     border-color: white;
     font-size:22px;
     --bs-nav-links-hover-color: #ffc451;
 }
-
-
+  
+  
 .nav {
-    --bs-nav-link-hover-color: #ffc451;}
-
+    --bs-nav-link-hover-color: #ffc451;
+}
+  
 .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #0073aa;
@@ -325,5 +279,496 @@ hr {
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: #0d6efd;
     --bs-btn-disabled-border-color: #0d6efd;
-
 }
+  
+
+
+
+/* ===== COMMON BUTTON STYLES ===== */
+/* Base button style shared across all button types */
+.version-button,
+.pollutant-button,
+[id="health-metricshome"] .btn,
+[id="health-metricscities"] .btn,
+[id="health-metricscountry"] .btn,
+[id="health-metricsstate"] .btn,
+[id="c40-toggle"] .btn,
+[id="region-selector"] .btn,
+[id="crossfilter-xaxis-type"] .btn,
+[id="crossfilter-xaxis-typestate"] .btn,
+[id="crossfilter-xaxis-typecountry"] .btn {
+    background-color: white;
+    color: #123C69;
+    border: 1px solid #123C69 !important;
+    font-weight: normal !important;
+    transition: all 0.2s ease;
+    margin: 0 !important;
+    padding: 6px 12px !important;
+    font-size: 17px !important;
+    font-family: Helvetica, Arial, sans-serif !important;
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important;
+    border-radius: 0 !important;
+}
+
+/* Selected/active button styling */
+.version-button.active-version,
+.pollutant-button.selected-button,
+[id="health-metricshome"] .selected-button,
+[id="health-metricscities"] .btn.active,
+[id="health-metricscountry"] .selected-button,
+[id="health-metricscountry"] .btn.active,
+[id="health-metricsstate"] .selected-button,
+[id="health-metricsstate"] .btn.active,
+[id="c40-toggle"] .btn.active,
+[id="region-selector"] .btn.active,
+[id="crossfilter-xaxis-type"] .btn.active,
+[id="crossfilter-xaxis-typestate"] .btn.active,
+[id="crossfilter-xaxis-typecountry"] .btn.active {
+    background-color: #123C69 !important;
+    color: white !important;
+    font-weight: bold !important;
+    border-color: #123C69 !important;
+    z-index: 1 !important;
+    position: relative !important;
+}
+
+/* Hover effect */
+.version-button:hover,
+.pollutant-button:hover,
+[id="health-metricshome"] .btn:hover,
+[id="health-metricscities"] .btn:hover,
+[id="health-metricscountry"] .btn:hover,
+[id="health-metricsstate"] .btn:hover,
+[id="c40-toggle"] .btn:hover,
+[id="region-selector"] .btn:hover,
+[id="crossfilter-xaxis-type"] .btn:hover,
+[id="crossfilter-xaxis-typestate"] .btn:hover,
+[id="crossfilter-xaxis-typecountry"] .btn:hover {
+    background-color: #e6f0fa;
+}
+
+/* ===== BUTTON GROUP CONTAINERS ===== */
+/* Flex container for all button groups */
+.version-button-group,
+[id="pollutant-selector"],
+[id="crossfilter-yaxis-columncities"],
+[id="crossfilter-yaxis-columncountry"],
+[id="crossfilter-yaxis-columnstate"],
+[id="health-metricshome"],
+[id="health-metricscities"],
+[id="health-metricscountry"],
+[id="health-metricsstate"],
+[id="c40-toggle"],
+[id="region-selector"],
+[id="crossfilter-xaxis-type"],
+[id="crossfilter-xaxis-typestate"],
+[id="crossfilter-xaxis-typecountry"] {
+    width: 100% !important;
+    display: flex !important;
+    font-size: 0 !important;
+    white-space: nowrap !important;
+}
+
+/* Individual button wrappers */
+.version-button-group > div,
+[id="pollutant-selector"] .form-check,
+[id="crossfilter-yaxis-columncities"] .form-check,
+[id="crossfilter-yaxis-columncountry"] .form-check,
+[id="crossfilter-yaxis-columnstate"] .form-check,
+[id="health-metricshome"] .form-check,
+[id="health-metricscities"] .form-check,
+[id="health-metricscountry"] .form-check,
+[id="health-metricsstate"] .form-check,
+[id="c40-toggle"] .form-check,
+[id="region-selector"] .form-check,
+[id="crossfilter-xaxis-type"] .form-check,
+[id="crossfilter-xaxis-typestate"] .form-check,
+[id="crossfilter-xaxis-typecountry"] .form-check {
+    flex: 1 !important;
+    display: flex !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    font-size: 0 !important;
+}
+
+/* ===== CONNECTED BUTTON STYLING ===== */
+/* Right border removal for connected buttons */
+.version-button-group > div:not(:last-child) .version-button,
+[id="pollutant-selector"] .pollutant-button,
+[id="crossfilter-yaxis-columncities"] .pollutant-button,
+[id="crossfilter-yaxis-columncountry"] .pollutant-button,
+[id="crossfilter-yaxis-columnstate"] .pollutant-button,
+[id="health-metricshome"] .btn,
+[id="health-metricscities"] .btn,
+[id="health-metricscountry"] .btn,
+[id="health-metricsstate"] .btn,
+[id="c40-toggle"] .btn,
+[id="region-selector"] .btn,
+[id="crossfilter-xaxis-type"] .btn,
+[id="crossfilter-xaxis-typestate"] .btn,
+[id="crossfilter-xaxis-typecountry"] .btn {
+    border-right-width: 0 !important;
+}
+
+/* First button - rounded corners on left side only */
+.version-button-group > div:first-child .version-button,
+[id="pollutant-selector"] .form-check:first-child > .pollutant-button,
+[id="crossfilter-yaxis-columncities"] .form-check:first-child > .pollutant-button,
+[id="crossfilter-yaxis-columncountry"] .form-check:first-child > .pollutant-button,
+[id="crossfilter-yaxis-columnstate"] .form-check:first-child > .pollutant-button,
+[id="health-metricshome"] .form-check:first-child > .btn,
+[id="health-metricscities"] .form-check:first-child > .btn,
+[id="health-metricscountry"] .form-check:first-child > .btn,
+[id="health-metricsstate"] .form-check:first-child > .btn,
+[id="c40-toggle"] .form-check:first-child > .btn,
+[id="region-selector"] .form-check:first-child > .btn,
+[id="crossfilter-xaxis-type"] .form-check:first-child > .btn,
+[id="crossfilter-xaxis-typestate"] .form-check:first-child > .btn,
+[id="crossfilter-xaxis-typecountry"] .form-check:first-child > .btn {
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/* Last button - rounded corners on right side only */
+.version-button-group > div:last-child .version-button,
+[id="pollutant-selector"] .form-check:last-child > .pollutant-button,
+[id="crossfilter-yaxis-columncities"] .form-check:last-child > .pollutant-button,
+[id="crossfilter-yaxis-columncountry"] .form-check:last-child > .pollutant-button,
+[id="crossfilter-yaxis-columnstate"] .form-check:last-child > .pollutant-button,
+[id="health-metricshome"] .form-check:last-child > .btn,
+[id="health-metricscities"] .form-check:last-child > .btn,
+[id="health-metricscountry"] .form-check:last-child > .btn,
+[id="health-metricsstate"] .form-check:last-child > .btn,
+[id="c40-toggle"] .form-check:last-child > .btn,
+[id="region-selector"] .form-check:last-child > .btn,
+[id="crossfilter-xaxis-type"] .form-check:last-child > .btn,
+[id="crossfilter-xaxis-typestate"] .form-check:last-child > .btn,
+[id="crossfilter-xaxis-typecountry"] .form-check:last-child > .btn {
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-right-width: 1px !important;
+}
+
+/* Middle buttons - no rounded corners */
+[id="pollutant-selector"] .form-check:not(:first-child):not(:last-child) > .pollutant-button,
+[id="crossfilter-yaxis-columncities"] .form-check:not(:first-child):not(:last-child) > .pollutant-button,
+[id="crossfilter-yaxis-columncountry"] .form-check:not(:first-child):not(:last-child) > .pollutant-button,
+[id="crossfilter-yaxis-columnstate"] .form-check:not(:first-child):not(:last-child) > .pollutant-button,
+[id="health-metricshome"] .form-check:not(:first-child):not(:last-child) > .btn,
+[id="health-metricscities"] .form-check:not(:first-child):not(:last-child) > .btn,
+[id="health-metricscountry"] .form-check:not(:first-child):not(:last-child) > .btn,
+[id="health-metricsstate"] .form-check:not(:first-child):not(:last-child) > .btn,
+[id="c40-toggle"] .form-check:not(:first-child):not(:last-child) > .btn,
+[id="region-selector"] .form-check:not(:first-child):not(:last-child) > .btn,
+[id="crossfilter-xaxis-type"] .form-check:not(:first-child):not(:last-child) > .btn,
+[id="crossfilter-xaxis-typestate"] .form-check:not(:first-child):not(:last-child) > .btn,
+[id="crossfilter-xaxis-typecountry"] .form-check:not(:first-child):not(:last-child) > .btn {
+    border-radius: 0 !important;
+}
+
+/* Fix for overlapping borders */
+.version-button-group > div:not(:first-child) .version-button,
+[id="pollutant-selector"] .form-check:not(:first-child) > .pollutant-button,
+[id="crossfilter-yaxis-columncities"] .form-check:not(:first-child) > .pollutant-button,
+[id="crossfilter-yaxis-columncountry"] .form-check:not(:first-child) > .pollutant-button,
+[id="crossfilter-yaxis-columnstate"] .form-check:not(:first-child) > .pollutant-button,
+[id="health-metricshome"] .form-check:not(:first-child) > .btn,
+[id="health-metricscities"] .form-check:not(:first-child) > .btn,
+[id="health-metricscountry"] .form-check:not(:first-child) > .btn,
+[id="health-metricsstate"] .form-check:not(:first-child) > .btn,
+[id="c40-toggle"] .form-check:not(:first-child) > .btn,
+[id="region-selector"] .form-check:not(:first-child) > .btn,
+[id="crossfilter-xaxis-type"] .form-check:not(:first-child) > .btn,
+[id="crossfilter-xaxis-typestate"] .form-check:not(:first-child) > .btn,
+[id="crossfilter-xaxis-typecountry"] .form-check:not(:first-child) > .btn {
+    margin-left: -1px !important;
+}
+
+/* For the inner elements to stretch properly */
+[id="pollutant-selector"] .btn-check + label,
+[id="crossfilter-yaxis-columncities"] .btn-check + label,
+[id="crossfilter-yaxis-columncountry"] .btn-check + label,
+[id="crossfilter-yaxis-columnstate"] .btn-check + label,
+[id="health-metricshome"] .btn-check + label,
+[id="health-metricscities"] .btn-check + label,
+[id="health-metricscountry"] .btn-check + label,
+[id="health-metricsstate"] .btn-check + label,
+[id="c40-toggle"] .btn-check + label,
+[id="region-selector"] .btn-check + label,
+[id="crossfilter-xaxis-type"] .btn-check + label,
+[id="crossfilter-xaxis-typestate"] .btn-check + label,
+[id="crossfilter-xaxis-typecountry"] .btn-check + label {
+    width: 100% !important;
+    display: block !important;
+}
+
+
+
+
+/* ===== CONTAINER STYLING ===== */
+.control-group {
+    width: 100% !important;
+}
+
+
+
+
+
+
+
+
+/* Control panel layout */
+.control-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.control-panel > div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.control-group {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    margin-bottom: 15px;
+}
+
+/* Tooltip styling */
+.tooltip-inner {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 8px 10px;
+    max-width: 300px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .control-panel {
+        flex-direction: column;
+    }
+    
+    .control-panel > div {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+ /* Base style for all accordion buttons */
+.accordion-button {
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    color: #ffffff !important;
+    background-color: #154370 !important;
+}
+
+/* Style for active/expanded accordion button */
+.accordion-button:not(.collapsed) {
+    color: rgb(0, 0, 0) !important;
+    background-color: #e2e2e2 !important;
+    box-shadow: none !important;
+}
+
+/* Customize the arrow icon color for active state */
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+
+
+
+
+/* Fix for any potential issues with default Bootstrap styles */
+.form-check {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+   
+
+/* Add these CSS styles to your assets/styles.css file */
+
+.year-dropdown {
+    margin-top: 0px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.year-dropdown .Select-control {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.year-dropdown .Select-control:hover {
+    border-color: #123C69;
+}
+
+.year-dropdown .Select-menu-outer {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.year-dropdown .Select-option {
+    padding: 8px 10px;
+}
+
+.year-dropdown .Select-option.is-focused {
+    background-color: #f8f8f8;
+}
+
+.year-dropdown .Select-option.is-selected {
+    background-color: #e6f3ff;
+    color: #123C69;
+}
+
+/* Make dropdown options easier to click */
+.year-dropdown .Select-menu {
+    max-height: 300px;
+}
+
+/* Year dropdown title style */
+.year-dropdown h6 {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+    font-size: 18px;
+    font-family: helvetica;
+}
+
+/* Two-column layout styling */
+.two-column-divider {
+    border-right: 1px solid rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.control-panel {
+    background-color: rgba(248, 249, 250, 0.7);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.single-dropd, .custom-dropdown, .year-dropdown {
+    margin-bottom: 10px;
+}
+
+.dash-graph {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* Add these CSS rules to your styles.css file */
+
+/* Make buttons more compact to prevent overlap */
+.version-button,
+.pollutant-button,
+[id="health-metricscities"] .btn,
+[id="health-metricscountry"] .btn,
+[id="health-metricsstate"] .btn,
+[id="crossfilter-xaxis-typecountry"] .btn,
+[id="crossfilter-xaxis-typestate"] .btn,
+[id="crossfilter-xaxis-type"] .btn {
+    font-size: 15px !important;
+    padding: 4px 8px !important; 
+}
+
+/* Reduce padding in control panel */
+.control-panel {
+    padding: 10px !important;
+}
+
+/* Style column titles */
+.column-title {
+    color: #123C69;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid #123C69;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Add media queries for responsive behavior */
+@media (max-width: 992px) {
+    /* Stack columns on smaller screens */
+    .two-column-divider {
+        border-right: none !important;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
+    /* Adjust button text size on small screens */
+    .version-button,
+    .pollutant-button,
+    [id="health-metricscities"] .btn,
+    [id="health-metricscountry"] .btn,
+    [id="crossfilter-xaxis-typecountry"] .btn,
+    [id="crossfilter-xaxis-type"] .btn {
+        font-size: 14px !important;
+    }
+}
+
+/* Allow dropdowns to have transparent backgrounds */
+.year-dropdown .Select-control,
+.single-dropd .Select-control,
+.custom-dropdown .Select-control {
+    background-color: transparent !important;
+}
+
+.year-dropdown,
+.single-dropd,
+.custom-dropdown {
+    background-color: transparent !important;
+}
+
+
+
+
+/* Prevent scroll zoom on Plotly maps */
+.js-plotly-plot .plotly-graph-div {
+    pointer-events: none;
+}
+
+.js-plotly-plot .plotly-graph-div:hover {
+    pointer-events: all;
+}
+
+/* Optional: Add a visual cue for interaction */
+.js-plotly-plot .plotly-graph-div:hover {
+    cursor: default;
+}
+
+
+
