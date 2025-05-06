@@ -8,7 +8,7 @@ def sliders(df):
             id='crossfilter-year--slider',
             min=df['Year'].min(),
             max=df['Year'].max(),
-            value=df['Year'].max(),
+            value=2019,
             marks={str(year): {'label': str(year)} for year in df['Year'].unique()},
             step=None,
             included=False,
@@ -65,6 +65,11 @@ def lin_log(name):
 
 
 def health_metrics(name):
+    tc = dbc.Tooltip(
+        "Concentrations for PM2.5, NO2, and O3 are provided as population-weighted average concentrations.",
+        target='Concentration',
+        trigger="hover",
+    )
     tt = dbc.Tooltip(
         "Population Attributable Fraction (PAF) is the proportion of cases for an outcome that can be attributed to the pollutant among the entire population",
         target='PAF',
@@ -99,7 +104,7 @@ def health_metrics(name):
             value='Concentration',
             labelStyle={'display': 'inline-block'}
         ),
-        tt, td, ts
+        tc, tt, td, ts
     ], className="control-group")
     return metrics
 
@@ -343,9 +348,9 @@ def year_dropdown(df):
             'font-family': 'helvetica'
         }),
         dcc.Dropdown(
-            id='crossfilter-year--slider',  # Keep the same ID for compatibility
+            id='crossfilter-year--slider',
             options=[{'label': str(year), 'value': year} for year in available_years],
-            value=latest_year,
+            value=2019 if 2019 in available_years else latest_year,
             clearable=False,
             style={
                 'width': '100%', 

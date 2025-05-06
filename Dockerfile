@@ -14,4 +14,4 @@ USER appUser
 
 EXPOSE 8050
 
-CMD gunicorn --certfile local.cer --keyfile local.key --bind 0.0.0.0:8050 index:server
+CMD gunicorn --bind 0.0.0.0:8050 index:server

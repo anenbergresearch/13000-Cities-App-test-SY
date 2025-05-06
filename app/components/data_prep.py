@@ -32,11 +32,15 @@ V2_COLUMN_MAPPING = {
     'O3': 'Pw_O3_V2',
     'CO2': 'CO2_V2'
 }
+V1_COLUMN_MAPPING = {
+    'PM': 'Pw_PM',
+    'NO2': 'Pw_NO2',
+    'O3': 'Pw_O3',
+    'CO2': 'CO2'
+}
 
-col_stats = ['Population','NO2','PM','O3','CO2','PAF_PM','PAF_NO2','PAF_O3','Cases_NO2','Cases_PM','Cases_O3','Rates_NO2','Rates_O3','Rates_PM'] #Column Selection
-col_stats_v2 = ['Population','Pw_NO2_V2','Pw_PM_V2','Pw_O3_V2','CO2_V2'] #Column Selection
 
-    
+
     
 ## Percent change calculation : % change between two 2-year moving averages    
 def calculate_change(low,high,df,pol):
@@ -47,7 +51,7 @@ def calculate_change(low,high,df,pol):
     return ((hdf[pol]-ldf[pol])/ldf[pol])*100
 
 DF_CHANGE = DFILT.query('Year == 2019')[['CityCountry','Latitude','Longitude','Population','C40']].set_index('CityCountry') #empty template for percent change values
-for i in ['PM', 'NO2','O3','CO2']:
+for i in ['Pw_PM', 'Pw_NO2','Pw_O3','CO2']:
     DF_CHANGE[i] = calculate_change(2010,2019,DFILT,i)
 DF_CHANGE.reset_index(inplace=True) 
 
@@ -59,6 +63,9 @@ DF_CHANGE_V2.reset_index(inplace=True)
 
 
 
+
+col_stats = ['Population','Pw_NO2','Pw_PM','Pw_O3','CO2','PAF_PM','PAF_NO2','PAF_O3','Cases_NO2','Cases_PM','Cases_O3','Rates_NO2','Rates_O3','Rates_PM'] #Column Selection
+col_stats_v2 = ['Population','Pw_NO2_V2','Pw_PM_V2','Pw_O3_V2','CO2_V2'] #Column Selection
 
 
 ## Regional (country or state) summary statistics (min/max, population-weighted mean) 
@@ -98,7 +105,7 @@ def get_column_name(version, metric, pollutant):
     
     # Version 1 mapping
     if metric == 'Concentration':
-        return pollutant
+        return V1_COLUMN_MAPPING[pollutant]
     elif metric == 'PAF':
         return f'PAF_{pollutant}'
     elif metric == 'Cases':
@@ -138,7 +145,7 @@ DF_V2 = {}
 MEAN_DF_V2 = {}
 STATS_V2 ={}
 
-col_select = ['ID','City','C40','Year','Population','NO2','PM','O3','CO2','PAF_PM','PAF_NO2','PAF_O3','Cases_NO2','Cases_PM','Cases_O3','Rates_NO2','Rates_O3','Rates_PM']
+col_select = ['ID','City','C40','Year','Population','Pw_NO2','Pw_PM','Pw_O3','CO2','PAF_PM','PAF_NO2','PAF_O3','Cases_NO2','Cases_PM','Cases_O3','Rates_NO2','Rates_O3','Rates_PM']
 col_select_v2 = ['ID','City','C40','Year','Population','Pw_NO2_V2','Pw_PM_V2','Pw_O3_V2','CO2_V2']
 
 # V1 data preparation

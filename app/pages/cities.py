@@ -19,6 +19,12 @@ V2_COLUMN_MAPPING = {
     'O3': 'Pw_O3_V2',
     'CO2': 'CO2_V2'
 }
+V1_COLUMN_MAPPING = {
+    'PM': 'Pw_PM',
+    'NO2': 'Pw_NO2',
+    'O3': 'Pw_O3',
+    'CO2': 'CO2'
+}
 
 cont_l = df.continent.dropna().unique() #getting the list of distinct continent names
 cont_dict = {}
@@ -431,7 +437,7 @@ def update_graph(yaxis_column_name,
         if metric != 'Concentration':
             yaxis_plot = metric + '_' + yaxis_column_name
         else:
-            yaxis_plot = yaxis_column_name
+            yaxis_plot = V1_COLUMN_MAPPING[yaxis_column_name]
         unit_title = const.UNITS[metric][yaxis_column_name]
     else:  # version == '2'
         yaxis_plot = V2_COLUMN_MAPPING[yaxis_column_name]
@@ -761,7 +767,7 @@ def update_pol_timeseries(hoverData, yaxis_column_name, city_sel, version, metri
             axis_plot = V2_COLUMN_MAPPING[yaxis_column_name]
             ytitle = const.UNITS_V2['Concentration'].get(yaxis_column_name, yaxis_column_name)
         else:
-            axis_plot = yaxis_column_name
+            axis_plot = V1_COLUMN_MAPPING[yaxis_column_name]
             ytitle = const.UNITS['Concentration'][yaxis_column_name]
         
     else:

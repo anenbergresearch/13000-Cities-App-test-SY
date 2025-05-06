@@ -131,7 +131,7 @@ year_selector = html.Div([
     dcc.Dropdown(
         id='country-year-dropdown',
         options=[{'label': str(year), 'value': year} for year in sorted(df['Year'].unique())],
-        value=df['Year'].max(),
+        value=2019,
         style={'color': '#123C69', 'font-size': '14px'},
         clearable=False
     )

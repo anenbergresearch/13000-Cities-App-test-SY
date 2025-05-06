@@ -1,0 +1,33 @@
+FROM --platform=linux/amd64 continuumio/miniconda3:latest
+
+# Copy application files
+COPY ./app /app
+COPY requirements.txt /tmp/
+
+# Fix the LABEL format
+LABEL maintainer="Soo-Yeon Kim, sooyeonkim@gwu.edu"
+
+# Set working directory
+WORKDIR "/app"
+
+# Use shell form for RUN with exec to improve compatibility
+SHELL ["/bin/bash", "-c"]
+
+# Combine conda commands to reduce layers
+RUN conda config --set always_yes yes \
+    && conda install python=3.10 \
+    && conda install --file /tmp/requirements.txt -c conda-forge \
+    && conda install gunicorn uwsgi \
+    && conda clean -afy
+
+# Create user for better security
+RUN useradd -m appUser
+
+# Switch to non-root user
+USER appUser
+
+# Expose the port
+EXPOSE 8050
+
+# Fix CMD format for better signal handling
+CMD ["gunicorn", "--certfile", "local.cer", "--keyfile", "local.key", "--bind", "0.0.0.0:8050", "index:server"]

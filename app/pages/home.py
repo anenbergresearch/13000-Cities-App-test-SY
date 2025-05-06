@@ -34,6 +34,12 @@ V2_COLUMN_MAPPING = {
     'O3': 'Pw_O3_V2',
     'CO2': 'CO2_V2'
 }
+V1_COLUMN_MAPPING = {
+    'PM': 'Pw_PM',
+    'NO2': 'Pw_NO2',
+    'O3': 'Pw_O3',
+    'CO2': 'CO2'
+}
 
 # ---------------------------------------------------
 # UI COMPONENTS BY TAB ORDER 
@@ -528,7 +534,7 @@ def generate_combined_graph(version, pollutant, year_value, metric):
         if metric != 'Concentration':
             axis_plot = f"{metric}_{pollutant}"
         else:
-            axis_plot = pollutant
+            axis_plot = V1_COLUMN_MAPPING[pollutant]
         limits = m_limits
         unit_label = const.UNITS[metric][pollutant]
     else:
@@ -638,7 +644,7 @@ def generate_pcgraph(pollutant, version):
     # Get the appropriate column based on version and pollutant
     if version == '1':
         # Use standard column for Version 1
-        yaxis_column_name = pollutant
+        yaxis_column_name = V1_COLUMN_MAPPING[pollutant]
         plot = data_prep.DF_CHANGE
         unit_label = const.UNITS_PC[pollutant]
 

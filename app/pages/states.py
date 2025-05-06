@@ -147,7 +147,7 @@ year_selector = html.Div([
     dcc.Dropdown(
         id='state-year-dropdown',
         options=[{'label': str(year), 'value': year} for year in sorted(df['United States']['Year'].unique())],
-        value=df['United States']['Year'].max(),
+        value=2019,
         style={'color': '#123C69', 'font-size': '14px'},
         clearable=False
     )
@@ -460,7 +460,7 @@ def update_year_dropdown(country, version):
     df_data, _, _ = get_version_data(version, country)
     
     years = sorted(df_data['Year'].unique())
-    return [{'label': str(year), 'value': year} for year in years], max(years)
+    return [{'label': str(year), 'value': year} for year in years], 2019
 
 # Reset health metrics when version changes
 @callback(
